@@ -16,7 +16,6 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./../res/js/rs-plugin/css/settings.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="./../res/css/isotope.css" media="screen">
     <link rel="stylesheet" href="./../res/css/flexslider.css" type="text/css">
     <link rel="stylesheet" href="./../res/js/fancybox/jquery.fancybox.css" type="text/css" media="screen">
     <link rel="stylesheet" href="./../res/css/bootstrap.css">
@@ -39,12 +38,12 @@
                 <span class="fa fa-bars color-white"></span>
             </button>
             <div class="navbar-logo">
-                <a href="/home"><img data-0="width:155px;" data-300=" width:120px;" src="./../res/img/logo.png" alt=""></a>
+                <a href="/"><img data-0="width:155px;" data-300=" width:120px;" src="./../res/img/logo.jpg" alt=""></a>
             </div>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
-                <li class="active"><a href="/home">Home</a></li>
+                <li class="active"><a href="/">Home</a></li>
                 <li><a href="#section-about">Schedule</a></li>
                 <li><a href="#section-report">Result</a></li>
                 <li><a href="#section-contact">Contact</a></li>
@@ -56,8 +55,8 @@
 
 <section id="intro">
     <div class="intro-content">
-        <h2>Welcome to Vlava!</h2>
-        <h3>Lorem ipsum dolor sit amet, elit persecuti efficiendi</h3>
+        <h2>Welcome to Nepal!</h2>
+        <h3>Land of glory and the Natural Beauty</h3>
         <div>
             <a href="#section-services" class="btn-get-started scrollto">Get Started</a>
         </div>
@@ -240,7 +239,6 @@
 <script src="./../res/js/jquery.js"></script>
 <script src="./../res/js/jquery.easing.1.3.js"></script>
 <script src="./../res/js/bootstrap.min.js"></script>
-<script src="./../res/js/jquery.isotope.min.js"></script>
 <script src="./../res/js/jquery.nicescroll.min.js"></script>
 <script src="./../res/js/fancybox/jquery.fancybox.pack.js"></script>
 <script src="./../res/js/skrollr.min.js"></script>
