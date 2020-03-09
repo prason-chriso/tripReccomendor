@@ -50,10 +50,10 @@ Above algorithm is designed to determined the priority level by comparing 1-1 bu
 	2: if later trip has shorter trip lenght then priority to later trip but if later trip has multiple trip count of same start/end time 
 		and the bus is also to be choosen among A&B
 		
-These two cases  consist of comparision of one -to- Many or Many-to-one object at same time so couldn't be handle by 
+These two cases  consist of comparision of one -to- Many or Many-to-one object at same time so couldn't be handle in some cases by 
 default working of USER-DEFINED ordering algorithm, which is "PRIORITY ALGORITHM" in our case.
 
-Such scenarios are handled by new module that determines the highest priority.
+Such scenarios are handled by new module that determines the highest priority. it only arises in 5% scenarios and is almost negligible.
 
 =========================================
 #EXECUTED-TEST CASES
@@ -75,6 +75,15 @@ Such scenarios are handled by new module that determines the highest priority.
 	
 	9. more than 90 min travel is automatically set to invalid and is rejected, if not /
 		Otherwise, option of alternative trip is to be suggested to the user by the system.
+		
+=========================================
+#SYSTEM OUTPUT
+=========================================
+	This system will recommend the best trip suited for the user
+	considering travel time, delay to reach the destination,
+	type of Bus ('B' over 'A') and the server time.
+	
+	Note: start time of trip has lower priority compared to overall time to reach the destination.
 
 =========================================
 #PUBLIC-API
@@ -85,3 +94,4 @@ Such scenarios are handled by new module that determines the highest priority.
 2.  /sortedSchedule : this will generate the JSON data for sorted schedule uploaded to the system
 3.  /prioritySchedule: This will generate the prioritized JSON data of the trip and traveling based on the condition mentioned in the          problem Statement.
 4.  /showResult: This will generate the JSON of the best Trip Daata and Message for the User using the System.
+
