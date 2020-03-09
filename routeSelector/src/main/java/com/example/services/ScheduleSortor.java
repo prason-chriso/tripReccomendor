@@ -17,7 +17,7 @@ public class ScheduleSortor implements Comparator<TripSchedule> {
     public int compare(TripSchedule o1, TripSchedule o2) {
         logger.debug("COMPARING FOR DELAY "+o1.toString()+" against "+o2.toString());
          try {
-           if(o1.getDelay(timeNow)>o2.getDelay(timeNow))return 1 ; else if(o1.getDelay(timeNow)<o2.getDelay(timeNow)) return -1;
+           if(o1.isComing(timeNow)>o2.isComing(timeNow))return 1 ; else if(o1.isComing(timeNow)<o2.isComing(timeNow)) return -1;
         } catch (ParseException e) {
 
              logger.error("ERROR DURING PARSING THE DATE DATA "+e.getMessage());
